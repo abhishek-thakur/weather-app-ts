@@ -87,6 +87,9 @@ export default defineComponent({
     clear() {
       this.city = "";
       this.cityName = "";
+      this.country ="",
+      this.desc = "",
+      this.imgUrl = "",
       this.temp = "";
       this.min = "";
       this.max = "";
