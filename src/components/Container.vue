@@ -15,7 +15,7 @@
     <div class="resultBox" v-show="isVisible">
       <ul class="details">
         <li class="h3">{{ cityName }}, {{ country }}</li>
-        <li class="h4">{{ desc }}<img v-bind:src="imgUrl" /></li>
+        <li class="h4">{{ desc }}<img :src="imgUrl" /></li>
       </ul>
       <ul>
         <p class="fs-2">other details</p>
