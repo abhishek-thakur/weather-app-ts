@@ -95,10 +95,7 @@ export default defineComponent({
       this.max = "";
       this.feels = "";
     }
-  },
-  isDisabled(){
-      return this.city.length == 0
-    }
+  }
 });
 </script>
 
