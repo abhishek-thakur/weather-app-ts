@@ -8,7 +8,7 @@
         placeholder="Enter city name"
         autocomplete="off"
       />
-      <button class="btn btn-dark" type="button" @click.prevent="getCity">
+      <button class="btn btn-dark" type="button" @click.prevent="getCity" :disabled="isDisabled">
         Submit
       </button>
     </div>
@@ -44,6 +44,11 @@ export default defineComponent({
       desc: "",
       imgUrl: "",
     };
+  },
+  computed:{
+    isDisabled(): boolean {
+      return this.city.length == 0
+    }
   },
   methods: {
     getCity() {
